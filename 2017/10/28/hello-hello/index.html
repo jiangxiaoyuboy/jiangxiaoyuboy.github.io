@@ -6,19 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://jiangxiaoyuboy.github.io">
-  <title>window系统如何查看某个接口被占用 | 僵小鱼的博客</title>
+  <title>移动端适配方案 flexible.js | 僵小鱼的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="记录">
+  <meta name="description" content="1$flexible.js 有什么用 正如文章标题所写的那样，它就是一个终端设备适配的解决方案。也就是说它可以让你在不同的终端设备中实现页面适配。1$flexible.js 怎么用  ##flexible.js 的用法非常的简单，在页面的中引入 flexible_css.js,flexible.js文件： // 加载阿里CDN的文件 1&amp;lt;script src=&quot;http://g.tbcdn.">
+<meta name="keywords" content="移动适配">
 <meta property="og:type" content="article">
-<meta property="og:title" content="window系统如何查看某个接口被占用">
+<meta property="og:title" content="移动端适配方案 flexible.js">
 <meta property="og:url" content="https://jiangxiaoyuboy.github.io/2017/10/28/hello-hello/index.html">
 <meta property="og:site_name" content="僵小鱼的博客">
-<meta property="og:description" content="记录">
+<meta property="og:description" content="1$flexible.js 有什么用 正如文章标题所写的那样，它就是一个终端设备适配的解决方案。也就是说它可以让你在不同的终端设备中实现页面适配。1$flexible.js 怎么用  ##flexible.js 的用法非常的简单，在页面的中引入 flexible_css.js,flexible.js文件： // 加载阿里CDN的文件 1&amp;lt;script src=&quot;http://g.tbcdn.">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2017-11-04T16:48:41.206Z">
+<meta property="og:updated_time" content="2017-11-05T14:31:00.497Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="window系统如何查看某个接口被占用">
-<meta name="twitter:description" content="记录">
+<meta name="twitter:title" content="移动端适配方案 flexible.js">
+<meta name="twitter:description" content="1$flexible.js 有什么用 正如文章标题所写的那样，它就是一个终端设备适配的解决方案。也就是说它可以让你在不同的终端设备中实现页面适配。1$flexible.js 怎么用  ##flexible.js 的用法非常的简单，在页面的中引入 flexible_css.js,flexible.js文件： // 加载阿里CDN的文件 1&amp;lt;script src=&quot;http://g.tbcdn.">
   
     <link rel="alternative" href="/atom.xml" title="僵小鱼的博客" type="application/atom+xml">
   
@@ -161,7 +162,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      window系统如何查看某个接口被占用
+      移动端适配方案 flexible.js
     </h1>
   
 
@@ -174,7 +175,13 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="variable">$flexible</span>.js 有什么用</div></pre></td></tr></table></figure>
+<p>正如文章标题所写的那样，它就是一个终端设备适配的解决方案。也就是说它可以让你在不同的终端设备中实现页面适配。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="variable">$flexible</span>.js 怎么用</div></pre></td></tr></table></figure></p>
+<p> ##flexible.js 的用法非常的简单，在页面的<head></head>中引入 flexible_css.js,flexible.js文件：<br> // 加载阿里CDN的文件<br> <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;script src=<span class="string">"http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"</span>&gt;&lt;/script&gt;</div></pre></td></tr></table></figure></p>
+<p>除了上面这种方式外，你还可以把这两个文件下载到自己的项目中，然后再引入，效果是一样的。<br>事实上 flexible.js 做了下面三件事：<br>    1、动态改写标签<br>    2、给<html>元素添加data-dpr属性，并且动态改写data-dpr的值<br>    3、给<html>元素添加font-size属性，并且动态改写font-size的值<br>说得简单点就是 rem 相当于我们平常用的百分比，只不过 rem 是相对根元素的。而我们的根元素是根据终端屏幕大小来动态设置的，所以不管是 iphone 6 plus 还是 iphone6，或者是其它任何终端设备都可以很完美地还原设计稿。</html></html></p>
+<p>还有一个关于 px 转 rem 的，你也不用自己一个一个手动去换算，这里有一个插件你可以安装下，它会自动地帮你把 px 换算成 rem 。</p>
+<p>传送门：<a href="https://github.com/flashlizi/cssrem" target="_blank" rel="external">https://github.com/flashlizi/cssrem</a></p>
+
       
 
       
@@ -203,6 +210,17 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">移动适配</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
@@ -266,6 +284,15 @@
 
   
 <nav id="article-nav">
+  
+    <a href="/2017/11/05/tool/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          Windows下如何查看某个端口被谁占用
+        
+      </div>
+    </a>
   
   
     <a href="/2017/10/28/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
@@ -406,6 +433,14 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">移动适配</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">端口占用</a>
+              </li>
             
             <div class="clearfix"></div>
           </ul>

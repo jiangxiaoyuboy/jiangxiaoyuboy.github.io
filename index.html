@@ -155,6 +155,82 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-tool" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/11/05/tool/">Windows下如何查看某个端口被谁占用</a>
+    </h1>
+  
+
+        
+        <a href="/2017/11/05/tool/" class="archive-article-date">
+  	<time datetime="2017-11-05T13:10:57.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-05</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>这里我们以4000端口为例<br>1、按下win+R调出命令行窗口，输入netstat -aon|findstr “4000” ，找到指定的一列数字，这里是”9136”</p>
+<p><img src="/2017/11/05/tool/port.png" alt="logo"></p>
+<p>2、输入tasklist|findstr “9136”，发现是<br><img src="/2017/11/05/tool/port1.png" alt="logo"><br>3、再次输入taskkill /f /t /im node.exe结束该进程</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">端口占用</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/11/05/tool/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-hello-hello" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -162,7 +238,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/10/28/hello-hello/">window系统如何查看某个接口被占用</a>
+      <a class="article-title" href="/2017/10/28/hello-hello/">移动端适配方案 flexible.js</a>
     </h1>
   
 
@@ -175,7 +251,13 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="variable">$flexible</span>.js 有什么用</div></pre></td></tr></table></figure>
+<p>正如文章标题所写的那样，它就是一个终端设备适配的解决方案。也就是说它可以让你在不同的终端设备中实现页面适配。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="variable">$flexible</span>.js 怎么用</div></pre></td></tr></table></figure></p>
+<p> ##flexible.js 的用法非常的简单，在页面的<head></head>中引入 flexible_css.js,flexible.js文件：<br> // 加载阿里CDN的文件<br> <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;script src=<span class="string">"http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"</span>&gt;&lt;/script&gt;</div></pre></td></tr></table></figure></p>
+<p>除了上面这种方式外，你还可以把这两个文件下载到自己的项目中，然后再引入，效果是一样的。<br>事实上 flexible.js 做了下面三件事：<br>    1、动态改写标签<br>    2、给<html>元素添加data-dpr属性，并且动态改写data-dpr的值<br>    3、给<html>元素添加font-size属性，并且动态改写font-size的值<br>说得简单点就是 rem 相当于我们平常用的百分比，只不过 rem 是相对根元素的。而我们的根元素是根据终端屏幕大小来动态设置的，所以不管是 iphone 6 plus 还是 iphone6，或者是其它任何终端设备都可以很完美地还原设计稿。</html></html></p>
+<p>还有一个关于 px 转 rem 的，你也不用自己一个一个手动去换算，这里有一个插件你可以安装下，它会自动地帮你把 px 换算成 rem 。</p>
+<p>传送门：<a href="https://github.com/flashlizi/cssrem" target="_blank" rel="external">https://github.com/flashlizi/cssrem</a></p>
+
       
 
       
@@ -183,6 +265,17 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">移动适配</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
@@ -379,6 +472,14 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">移动适配</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">端口占用</a>
+              </li>
             
             <div class="clearfix"></div>
           </ul>
