@@ -6,18 +6,26 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://jiangxiaoyuboy.github.io">
-  <title>Archives: 2017/11 | 僵小鱼的博客</title>
+  <title>sublime的安装与使用 | 僵小鱼的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="记录">
-<meta property="og:type" content="website">
-<meta property="og:title" content="僵小鱼的博客">
-<meta property="og:url" content="https://jiangxiaoyuboy.github.io/archives/2017/11/index.html">
+  <meta name="description" content="Sublime的安装可以去官网按照提示安装Sublime Text3虽然功能强大，但是还是需要一些插件的辅助，下面我就给大家分享下如何在Sublime Text3下安装插件。Package Control组件在线安装1、按Ctrl+`调出console（注：避免热键冲突）2、粘贴以下代码到命令行并回车：import urllib.request,os; pf = ‘Package Control.">
+<meta name="keywords" content="工欲善其事，必先利其器">
+<meta property="og:type" content="article">
+<meta property="og:title" content="sublime的安装与使用">
+<meta property="og:url" content="https://jiangxiaoyuboy.github.io/2017/11/17/sublimetools/index.html">
 <meta property="og:site_name" content="僵小鱼的博客">
-<meta property="og:description" content="记录">
+<meta property="og:description" content="Sublime的安装可以去官网按照提示安装Sublime Text3虽然功能强大，但是还是需要一些插件的辅助，下面我就给大家分享下如何在Sublime Text3下安装插件。Package Control组件在线安装1、按Ctrl+`调出console（注：避免热键冲突）2、粘贴以下代码到命令行并回车：import urllib.request,os; pf = ‘Package Control.">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://jiangxiaoyuboy.github.io/2017/11/17/sublimetools/pht1.png">
+<meta property="og:image" content="https://jiangxiaoyuboy.github.io/2017/11/17/sublimetools/pht2.png">
+<meta property="og:image" content="https://jiangxiaoyuboy.github.io/2017/11/17/sublimetools/pht3.png">
+<meta property="og:image" content="https://jiangxiaoyuboy.github.io/2017/11/17/sublimetools/pht4.png">
+<meta property="og:image" content="https://jiangxiaoyuboy.github.io/2017/11/17/sublimetools/pht5.png">
+<meta property="og:updated_time" content="2017-11-17T14:59:19.360Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="僵小鱼的博客">
-<meta name="twitter:description" content="记录">
+<meta name="twitter:title" content="sublime的安装与使用">
+<meta name="twitter:description" content="Sublime的安装可以去官网按照提示安装Sublime Text3虽然功能强大，但是还是需要一些插件的辅助，下面我就给大家分享下如何在Sublime Text3下安装插件。Package Control组件在线安装1、按Ctrl+`调出console（注：避免热键冲突）2、粘贴以下代码到命令行并回车：import urllib.request,os; pf = ‘Package Control.">
+<meta name="twitter:image" content="https://jiangxiaoyuboy.github.io/2017/11/17/sublimetools/pht1.png">
   
     <link rel="alternative" href="/atom.xml" title="僵小鱼的博客" type="application/atom+xml">
   
@@ -157,36 +165,66 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-sublimetools" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/11/17/sublimetools/" class="archive-article-date">
-  	<time datetime="2017-11-17T11:33:55.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-17</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/11/17/sublimetools/">sublime的安装与使用</a>
+    <h1 class="article-title" itemprop="name">
+      sublime的安装与使用
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2017/11/17/sublimetools/" class="archive-article-date">
+  	<time datetime="2017-11-17T11:33:55.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-17</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Sublime的安装可以去官网按照提示安装<br>Sublime Text3虽然功能强大，但是还是需要一些插件的辅助，下面我就给大家分享下如何在Sublime Text3下安装插件。<br>Package Control组件在线安装<br>1、按Ctrl+`调出console（注：避免热键冲突）<br>2、粘贴以下代码到命令行并回车：<br>import urllib.request,os; pf = ‘Package Control.sublime-package’; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), ‘wb’).write(urllib.request.urlopen( ‘<a href="http://sublime.wbond.net/" target="_blank" rel="external">http://sublime.wbond.net/</a>‘ + pf.replace(‘ ‘,’%20’)).read())<br>3、重启Sublime Text 3。<br>4、如果在Perferences-&gt;package settings中看到package control这一项，则安装成功。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sublimeText3汉化教程-自带插件汉化</div></pre></td></tr></table></figure></p>
+<p>1、首先打开sublime，找到preference 下的package control<br><img src="/2017/11/17/sublimetools/pht1.png" alt="logo"></p>
+<p>2、点击package control ，弹出如下框搜索install，找到install package点击进入</p>
+<p><img src="/2017/11/17/sublimetools/pht2.png" alt="logo"></p>
+<p>3、点击进入之后搜索localiza,找到如下选项，点击安装<br><img src="/2017/11/17/sublimetools/pht3.png" alt="logo"></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Emmet（原名 Zen Coding）</div></pre></td></tr></table></figure>
+<p>一种快速编写html/css的方法<br>安装方法同汉化插件，在最后一步输入“Emmet”点击进入</p>
+<p>输入快捷键 按Tab<br><img src="/2017/11/17/sublimetools/pht4.png" alt="logo"></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">HTML-CSS-JS Prettify</div></pre></td></tr></table></figure>
+<p>安装方法同上<br>使用说明：快速格式化html css js<br>快捷键：ctrl+shift+h<br>注意：node.exe的路径以及版本</p>
+<p><img src="/2017/11/17/sublimetools/pht5.png" alt="logo"></p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -198,95 +236,119 @@
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=https://jiangxiaoyuboy.github.io/2017/11/17/sublimetools/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/11/06/QrCode/" class="archive-article-date">
-  	<time datetime="2017-11-06T09:54:04.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-06</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2017/11/06/QrCode/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">草料Chrome浏览器插件，让二维码更好用</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/11/06/QrCode/">草料Chrome浏览器插件，让二维码更好用</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">二维码</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    目录，不存在的…
+                    </div>
+                </span>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+        
+    </div>
+</aside>
+
+
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/11/05/tool/" class="archive-article-date">
-  	<time datetime="2017-11-05T13:10:57.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-05</time>
-</a>
-        </div>
-    	 
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/11/05/tool/">Windows下如何查看某个端口被谁占用</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">端口占用</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
   
 
-    
+  
+
+  
 
 
           </div>
@@ -309,8 +371,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
