@@ -6,18 +6,24 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://jiangxiaoyuboy.github.io">
-  <title>僵小鱼的博客</title>
+  <title>vue2.0路由的用法 | 僵小鱼的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="记录">
-<meta property="og:type" content="website">
-<meta property="og:title" content="僵小鱼的博客">
-<meta property="og:url" content="https://jiangxiaoyuboy.github.io/index.html">
+  <meta name="description" content="vue-router是Vue.js官方的路由插件，它和vue.js是深度集成的，适合用于构建单页面应用。vue的单页面应用是基于路由和组件的，路由用于设定访问路径，并将路径和组件映射起来。传统的页面应用，是用一些超链接来实现页面切换和跳转的。在vue-router单页面应用中，则是路径之间的切换，也就是组件的切换。 1、首先第一步，在components文件夹里新建两个.vue文件。将用它们来路由">
+<meta name="keywords" content="路由">
+<meta property="og:type" content="article">
+<meta property="og:title" content="vue2.0路由的用法">
+<meta property="og:url" content="https://jiangxiaoyuboy.github.io/2017/11/19/vue-router/index.html">
 <meta property="og:site_name" content="僵小鱼的博客">
-<meta property="og:description" content="记录">
+<meta property="og:description" content="vue-router是Vue.js官方的路由插件，它和vue.js是深度集成的，适合用于构建单页面应用。vue的单页面应用是基于路由和组件的，路由用于设定访问路径，并将路径和组件映射起来。传统的页面应用，是用一些超链接来实现页面切换和跳转的。在vue-router单页面应用中，则是路径之间的切换，也就是组件的切换。 1、首先第一步，在components文件夹里新建两个.vue文件。将用它们来路由">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://jiangxiaoyuboy.github.io/2017/11/19/vue-router/routerPh1.png">
+<meta property="og:image" content="https://jiangxiaoyuboy.github.io/2017/11/19/vue-router/routerPh2.png">
+<meta property="og:image" content="https://jiangxiaoyuboy.github.io/2017/11/19/vue-router/routerPh3.png">
+<meta property="og:updated_time" content="2017-11-19T05:02:58.252Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="僵小鱼的博客">
-<meta name="twitter:description" content="记录">
+<meta name="twitter:title" content="vue2.0路由的用法">
+<meta name="twitter:description" content="vue-router是Vue.js官方的路由插件，它和vue.js是深度集成的，适合用于构建单页面应用。vue的单页面应用是基于路由和组件的，路由用于设定访问路径，并将路径和组件映射起来。传统的页面应用，是用一些超链接来实现页面切换和跳转的。在vue-router单页面应用中，则是路径之间的切换，也就是组件的切换。 1、首先第一步，在components文件夹里新建两个.vue文件。将用它们来路由">
+<meta name="twitter:image" content="https://jiangxiaoyuboy.github.io/2017/11/19/vue-router/routerPh1.png">
   
     <link rel="alternative" href="/atom.xml" title="僵小鱼的博客" type="application/atom+xml">
   
@@ -157,16 +163,14 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-    <article id="post-vue-router" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-vue-router" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/11/19/vue-router/">vue2.0路由的用法</a>
+    <h1 class="article-title" itemprop="name">
+      vue2.0路由的用法
     </h1>
   
 
@@ -187,6 +191,27 @@
       
 
       
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
     </div>
     <div class="article-info article-info-index">
       
@@ -205,16 +230,75 @@
       
 
       
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/11/19/vue-router/">展开全文 >></a>
-        </p>
-      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=https://jiangxiaoyuboy.github.io/2017/11/19/vue-router/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+  
+    <a href="/2017/11/18/htmlps/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">前端切图-ps技能</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -229,480 +313,32 @@
         </div>
         
         
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-htmlps" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/11/18/htmlps/">前端切图-ps技能</a>
-    </h1>
-  
-
-        
-        <a href="/2017/11/18/htmlps/" class="archive-article-date">
-  	<time datetime="2017-11-18T03:38:15.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-18</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>1、打开ps软件，点击“编辑”-“首选项”-“单位与标尺”的单位与标尺改成“像素”<br><img src="/2017/11/18/htmlps/ps1.png" alt="logo"></p>
-<p>2、选择改成‘图层’，“自动选择”建议不选，在psd选择要切的图片时，点击左栏的拖动图标，选中图片，按住ctrl键，鼠标左击<br><img src="/2017/11/18/htmlps/ps2.png" alt="logo"></p>
-<p>3、把“视图”里面的“标尺”和“视图”-“显示”-“智能参考线”和“参考线”勾上<br>4、 在“窗口”这栏 勾上“图层”，“信息”，“历史记录”，“字符”，其他的可以勾掉<br>5、在右测“信息”，点击“面板选项”，做如下图修改<br><img src="/2017/11/18/htmlps/ps3.png" alt="logo"></p>
-<p>6、设置完成后，在“窗口”-“工作区”-“新建工作区”命名一个工作区，以便下次打开的时候使用<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">精准切图（有的版本不支持）</div></pre></td></tr></table></figure></p>
-<p>1、点击“文件”-“脚本”-“将图层导出到文件”，并做如下图修改<br><img src="/2017/11/18/htmlps/ps4.png" alt="logo"><br><img src="/2017/11/18/htmlps/ps5.png" alt="logo"></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">ps</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/11/18/htmlps/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    目录，不存在的…
+                    </div>
+                </span>
             </div>
         </div>
         
-        
     </div>
 </aside>
 
 
 
-
   
-    <article id="post-sublimetools" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/11/17/sublimetools/">sublime的安装与使用</a>
-    </h1>
   
 
-        
-        <a href="/2017/11/17/sublimetools/" class="archive-article-date">
-  	<time datetime="2017-11-17T11:33:55.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-17</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Sublime的安装可以去官网按照提示安装<br>Sublime Text3虽然功能强大，但是还是需要一些插件的辅助，下面我就给大家分享下如何在Sublime Text3下安装插件。<br>Package Control组件在线安装<br>1、按Ctrl+`调出console（注：避免热键冲突）<br>2、粘贴以下代码到命令行并回车：<br>import urllib.request,os; pf = ‘Package Control.sublime-package’; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), ‘wb’).write(urllib.request.urlopen( ‘<a href="http://sublime.wbond.net/" target="_blank" rel="external">http://sublime.wbond.net/</a>‘ + pf.replace(‘ ‘,’%20’)).read())<br>3、重启Sublime Text 3。<br>4、如果在Perferences-&gt;package settings中看到package control这一项，则安装成功。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sublimeText3汉化教程-自带插件汉化</div></pre></td></tr></table></figure></p>
-<p>1、首先打开sublime，找到preference 下的package control<br><img src="/2017/11/17/sublimetools/pht1.png" alt="logo"></p>
-<p>2、点击package control ，弹出如下框搜索install，找到install package点击进入</p>
-<p><img src="/2017/11/17/sublimetools/pht2.png" alt="logo"></p>
-<p>3、点击进入之后搜索localiza,找到如下选项，点击安装<br><img src="/2017/11/17/sublimetools/pht3.png" alt="logo"></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Emmet（原名 Zen Coding）</div></pre></td></tr></table></figure>
-<p>一种快速编写html/css的方法<br>安装方法同汉化插件，在最后一步输入“Emmet”点击进入</p>
-<p>输入快捷键 按Tab<br><img src="/2017/11/17/sublimetools/pht4.png" alt="logo"></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">HTML-CSS-JS Prettify</div></pre></td></tr></table></figure>
-<p>安装方法同上<br>使用说明：快速格式化html css js<br>快捷键：ctrl+shift+h<br>注意：node.exe的路径以及版本</p>
-<p><img src="/2017/11/17/sublimetools/pht5.png" alt="logo"></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">代码校验工具 SublimeLinter 的安装与使用</div></pre></td></tr></table></figure>
-<p>传送门：<a href="https://www.cnblogs.com/zhrn/p/5066309.html" target="_blank" rel="external">https://www.cnblogs.com/zhrn/p/5066309.html</a></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Sublime Text 3 快捷键总结（拿走）</div></pre></td></tr></table></figure>
-<p>传送门：<a href="https://www.douban.com/note/362268947/" target="_blank" rel="external">https://www.douban.com/note/362268947/</a></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">工欲善其事，必先利其器</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/11/17/sublimetools/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-QrCode" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/11/06/QrCode/">草料Chrome浏览器插件，让二维码更好用</a>
-    </h1>
   
 
-        
-        <a href="/2017/11/06/QrCode/" class="archive-article-date">
-  	<time datetime="2017-11-06T09:54:04.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-06</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>草料chrome插件，是专为chrome核心的浏览器开发的一个二维码应用增强工具插件。可以自动将地址栏链接生成二维码，也可以解析网页上任意一个二维码图案的内容。</p>
-<p>传送门：<a href="https://cli.im/news/6527" target="_blank" rel="external">https://cli.im/news/6527</a></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">二维码</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/11/06/QrCode/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-tool" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/11/05/tool/">Windows下如何查看某个端口被谁占用</a>
-    </h1>
   
 
-        
-        <a href="/2017/11/05/tool/" class="archive-article-date">
-  	<time datetime="2017-11-05T13:10:57.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-05</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>这里我们以4000端口为例<br>1、按下win+R调出命令行窗口，输入netstat -aon|findstr “4000” ，找到指定的一列数字，这里是”9136”</p>
-<p><img src="/2017/11/05/tool/port.png" alt="logo"></p>
-<p>2、输入tasklist|findstr “9136”，发现是<br><img src="/2017/11/05/tool/port1.png" alt="logo"><br>3、再次输入taskkill /f /t /im node.exe结束该进程</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">端口占用</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/11/05/tool/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-hello-hello" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/10/28/hello-hello/">移动端适配方案 flexible.js</a>
-    </h1>
-  
-
-        
-        <a href="/2017/10/28/hello-hello/" class="archive-article-date">
-  	<time datetime="2017-10-28T08:10:59.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-10-28</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="variable">$flexible</span>.js 有什么用</div></pre></td></tr></table></figure>
-<p>正如文章标题所写的那样，它就是一个终端设备适配的解决方案。也就是说它可以让你在不同的终端设备中实现页面适配。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="variable">$flexible</span>.js 怎么用</div></pre></td></tr></table></figure></p>
-<p> ##flexible.js 的用法非常的简单，在页面的<head></head>中引入 flexible_css.js,flexible.js文件：<br> // 加载阿里CDN的文件<br> <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;script src=<span class="string">"http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"</span>&gt;&lt;/script&gt;</div></pre></td></tr></table></figure></p>
-<p>除了上面这种方式外，你还可以把这两个文件下载到自己的项目中，然后再引入，效果是一样的。<br>事实上 flexible.js 做了下面三件事：<br>    1、动态改写标签<br>    2、给<html>元素添加data-dpr属性，并且动态改写data-dpr的值<br>    3、给<html>元素添加font-size属性，并且动态改写font-size的值<br>说得简单点就是 rem 相当于我们平常用的百分比，只不过 rem 是相对根元素的。而我们的根元素是根据终端屏幕大小来动态设置的，所以不管是 iphone 6 plus 还是 iphone6，或者是其它任何终端设备都可以很完美地还原设计稿。</html></html></p>
-<p>还有一个关于 px 转 rem 的，你也不用自己一个一个手动去换算，这里有一个插件你可以安装下，它会自动地帮你把 px 换算成 rem 。</p>
-<p>传送门：<a href="https://github.com/flashlizi/cssrem" target="_blank" rel="external">https://github.com/flashlizi/cssrem</a></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">移动适配</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/10/28/hello-hello/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/10/28/hello-world/">Hello World</a>
-    </h1>
-  
-
-        
-        <a href="/2017/10/28/hello-world/" class="archive-article-date">
-  	<time datetime="2017-10-28T07:29:55.771Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-10-28</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/10/28/hello-world/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
   
 
 
@@ -725,8 +361,8 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
