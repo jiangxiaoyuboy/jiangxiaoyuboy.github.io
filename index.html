@@ -159,6 +159,86 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-vueRtName" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/11/20/vueRtName/">路由的命名和参数传递</a>
+    </h1>
+  
+
+        
+        <a href="/2017/11/20/vueRtName/" class="archive-article-date">
+  	<time datetime="2017-11-20T14:31:22.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-20</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>在写这篇文章之前，先来解决，取消vue在检测写法规则的方法<br>找到目录build下的webpack.base.conf.js文件，把其中的rules里的这一段注销掉：<br><img src="/2017/11/20/vueRtName/vueRtName1.png" alt="logo"></p>
+<p> 现在书归真转，路由的命名实际上就是给路由绑定一个name的属性，通过name的值来跳转；而参数的传递则可以在页面进行绑定，下面做一个最简单的例子<br>先把app.vue修改：<br><img src="/2017/11/20/vueRtName/vueRtName2.png" alt="logo"></p>
+<p>在修改接收参数的music.vue:<br><img src="/2017/11/20/vueRtName/vueRtName3.png" alt="logo"></p>
+<p>以上这种方法这样传递的参数就不会显示在url中。</p>
+<p>下面来学习params方法传递的参数显示在url中<br>router文件夹下的index.js做如下修改<br><img src="/2017/11/20/vueRtName/vueRtName5.png" alt="logo"></p>
+<p>app.vue做如下修改<br><img src="/2017/11/20/vueRtName/vueRtName4.png" alt="logo"></p>
+<p>music.vue的写法<br><img src="/2017/11/20/vueRtName/vueRtName6.png" alt="logo"></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">vue-router</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/11/20/vueRtName/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-vue-router" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -807,7 +887,7 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">工欲善其事，必先利其器</a>
+                <a href="javascript:void(0)" class="js-tag color5">移动适配</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -815,11 +895,15 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">移动适配</a>
+                <a href="javascript:void(0)" class="js-tag color2">工欲善其事，必先利其器</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">路由</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">vue-router</a>
               </li>
             
             <div class="clearfix"></div>

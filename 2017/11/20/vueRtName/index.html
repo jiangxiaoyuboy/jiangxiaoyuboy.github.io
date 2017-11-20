@@ -6,27 +6,27 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://jiangxiaoyuboy.github.io">
-  <title>vue2.0路由的用法 | 僵小鱼的博客</title>
+  <title>路由的命名和参数传递 | 僵小鱼的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="vue-router是Vue.js官方的路由插件，它和vue.js是深度集成的，适合用于构建单页面应用。vue的单页面应用是基于路由和组件的，路由用于设定访问路径，并将路径和组件映射起来。传统的页面应用，是用一些超链接来实现页面切换和跳转的。在vue-router单页面应用中，则是路径之间的切换，也就是组件的切换。 1、首先第一步，在components文件夹里新建两个.vue文件。将用它们来路由">
-<meta name="keywords" content="路由">
+  <meta name="description" content="在写这篇文章之前，先来解决，取消vue在检测写法规则的方法找到目录build下的webpack.base.conf.js文件，把其中的rules里的这一段注销掉：  现在书归真转，路由的命名实际上就是给路由绑定一个name的属性，通过name的值来跳转；而参数的传递则可以在页面进行绑定，下面做一个最简单的例子先把app.vue修改： 在修改接收参数的music.vue: 以上这种方法这样传递的参数">
+<meta name="keywords" content="vue-router">
 <meta property="og:type" content="article">
-<meta property="og:title" content="vue2.0路由的用法">
-<meta property="og:url" content="https://jiangxiaoyuboy.github.io/2017/11/19/vue-router/index.html">
+<meta property="og:title" content="路由的命名和参数传递">
+<meta property="og:url" content="https://jiangxiaoyuboy.github.io/2017/11/20/vueRtName/index.html">
 <meta property="og:site_name" content="僵小鱼的博客">
-<meta property="og:description" content="vue-router是Vue.js官方的路由插件，它和vue.js是深度集成的，适合用于构建单页面应用。vue的单页面应用是基于路由和组件的，路由用于设定访问路径，并将路径和组件映射起来。传统的页面应用，是用一些超链接来实现页面切换和跳转的。在vue-router单页面应用中，则是路径之间的切换，也就是组件的切换。 1、首先第一步，在components文件夹里新建两个.vue文件。将用它们来路由">
+<meta property="og:description" content="在写这篇文章之前，先来解决，取消vue在检测写法规则的方法找到目录build下的webpack.base.conf.js文件，把其中的rules里的这一段注销掉：  现在书归真转，路由的命名实际上就是给路由绑定一个name的属性，通过name的值来跳转；而参数的传递则可以在页面进行绑定，下面做一个最简单的例子先把app.vue修改： 在修改接收参数的music.vue: 以上这种方法这样传递的参数">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https://jiangxiaoyuboy.github.io/2017/11/19/vue-router/routerPh1.png">
-<meta property="og:image" content="https://jiangxiaoyuboy.github.io/2017/11/19/vue-router/routerPh2.png">
-<meta property="og:image" content="https://jiangxiaoyuboy.github.io/2017/11/19/vue-router/routerPh3.png">
-<meta property="og:image" content="https://jiangxiaoyuboy.github.io/2017/11/19/vue-router/routerPh4.png">
-<meta property="og:image" content="https://jiangxiaoyuboy.github.io/2017/11/19/vue-router/routerPh5.png">
-<meta property="og:image" content="https://jiangxiaoyuboy.github.io/2017/11/19/vue-router/routerPh6.png">
-<meta property="og:updated_time" content="2017-11-19T13:22:28.639Z">
+<meta property="og:image" content="https://jiangxiaoyuboy.github.io/2017/11/20/vueRtName/vueRtName1.png">
+<meta property="og:image" content="https://jiangxiaoyuboy.github.io/2017/11/20/vueRtName/vueRtName2.png">
+<meta property="og:image" content="https://jiangxiaoyuboy.github.io/2017/11/20/vueRtName/vueRtName3.png">
+<meta property="og:image" content="https://jiangxiaoyuboy.github.io/2017/11/20/vueRtName/vueRtName5.png">
+<meta property="og:image" content="https://jiangxiaoyuboy.github.io/2017/11/20/vueRtName/vueRtName4.png">
+<meta property="og:image" content="https://jiangxiaoyuboy.github.io/2017/11/20/vueRtName/vueRtName6.png">
+<meta property="og:updated_time" content="2017-11-20T15:33:29.964Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="vue2.0路由的用法">
-<meta name="twitter:description" content="vue-router是Vue.js官方的路由插件，它和vue.js是深度集成的，适合用于构建单页面应用。vue的单页面应用是基于路由和组件的，路由用于设定访问路径，并将路径和组件映射起来。传统的页面应用，是用一些超链接来实现页面切换和跳转的。在vue-router单页面应用中，则是路径之间的切换，也就是组件的切换。 1、首先第一步，在components文件夹里新建两个.vue文件。将用它们来路由">
-<meta name="twitter:image" content="https://jiangxiaoyuboy.github.io/2017/11/19/vue-router/routerPh1.png">
+<meta name="twitter:title" content="路由的命名和参数传递">
+<meta name="twitter:description" content="在写这篇文章之前，先来解决，取消vue在检测写法规则的方法找到目录build下的webpack.base.conf.js文件，把其中的rules里的这一段注销掉：  现在书归真转，路由的命名实际上就是给路由绑定一个name的属性，通过name的值来跳转；而参数的传递则可以在页面进行绑定，下面做一个最简单的例子先把app.vue修改： 在修改接收参数的music.vue: 以上这种方法这样传递的参数">
+<meta name="twitter:image" content="https://jiangxiaoyuboy.github.io/2017/11/20/vueRtName/vueRtName1.png">
   
     <link rel="alternative" href="/atom.xml" title="僵小鱼的博客" type="application/atom+xml">
   
@@ -166,33 +166,33 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-vue-router" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-vueRtName" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      vue2.0路由的用法
+      路由的命名和参数传递
     </h1>
   
 
         
-        <a href="/2017/11/19/vue-router/" class="archive-article-date">
-  	<time datetime="2017-11-19T04:40:23.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-19</time>
+        <a href="/2017/11/20/vueRtName/" class="archive-article-date">
+  	<time datetime="2017-11-20T14:31:22.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-20</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>vue-router是Vue.js官方的路由插件，它和vue.js是深度集成的，适合用于构建单页面应用。vue的单页面应用是基于路由和组件的，路由用于设定访问路径，并将路径和组件映射起来。传统的页面应用，是用一些超链接来实现页面切换和跳转的。在vue-router单页面应用中，则是路径之间的切换，也就是组件的切换。</p>
-<p>1、首先第一步，在components文件夹里新建两个.vue文件。将用它们来路由页面。并且分别取名router1.router2<br><img src="/2017/11/19/vue-router/routerPh1.png" alt="logo"></p>
-<p>2、接下来，我们要在app.vue里写好2个导航命名为router1和router2。分别用来将router2,router1路由进来。<br><img src="/2017/11/19/vue-router/routerPh2.png" alt="logo"></p>
-<p>3、在router文件夹下面的index.js做如下操作，注意路径的地方的”/“不要丢掉<br><img src="/2017/11/19/vue-router/routerPh3.png" alt="logo"></p>
-<p>4、子路由的使用方法(例子：router1的子路由)<br>4.1、在components文件夹下创建chi.vue<br>在router文件夹下面的index.js引入子路由页面<br><img src="/2017/11/19/vue-router/routerPh4.png" alt="logo"></p>
-<p>4.2、子路由的路径写法<br><img src="/2017/11/19/vue-router/routerPh5.png" alt="logo"></p>
-<p>4.3、子路由的父级的内容写法<br><img src="/2017/11/19/vue-router/routerPh6.png" alt="logo"></p>
+        <p>在写这篇文章之前，先来解决，取消vue在检测写法规则的方法<br>找到目录build下的webpack.base.conf.js文件，把其中的rules里的这一段注销掉：<br><img src="/2017/11/20/vueRtName/vueRtName1.png" alt="logo"></p>
+<p> 现在书归真转，路由的命名实际上就是给路由绑定一个name的属性，通过name的值来跳转；而参数的传递则可以在页面进行绑定，下面做一个最简单的例子<br>先把app.vue修改：<br><img src="/2017/11/20/vueRtName/vueRtName2.png" alt="logo"></p>
+<p>在修改接收参数的music.vue:<br><img src="/2017/11/20/vueRtName/vueRtName3.png" alt="logo"></p>
+<p>以上这种方法这样传递的参数就不会显示在url中。</p>
+<p>下面来学习params方法传递的参数显示在url中<br>router文件夹下的index.js做如下修改<br><img src="/2017/11/20/vueRtName/vueRtName5.png" alt="logo"></p>
+<p>app.vue做如下修改<br><img src="/2017/11/20/vueRtName/vueRtName4.png" alt="logo"></p>
+<p>music.vue的写法<br><img src="/2017/11/20/vueRtName/vueRtName6.png" alt="logo"></p>
 
       
 
@@ -227,7 +227,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">路由</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">vue-router</a>
         		</li>
       		
 		</ul>
@@ -283,7 +283,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=https://jiangxiaoyuboy.github.io/2017/11/19/vue-router/" alt="微信分享二维码">
+      <img src="http://s.jiathis.com/qrcode.php?url=https://jiangxiaoyuboy.github.io/2017/11/20/vueRtName/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -297,18 +297,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2017/11/20/vueRtName/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          路由的命名和参数传递
-        
-      </div>
-    </a>
   
-  
-    <a href="/2017/11/18/htmlps/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">前端切图-ps技能</div>
+    <a href="/2017/11/19/vue-router/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">vue2.0路由的用法</div>
       <i class="icon-circle-right"></i>
     </a>
   
