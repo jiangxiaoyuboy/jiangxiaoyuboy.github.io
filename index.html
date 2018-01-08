@@ -159,6 +159,82 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-smallProgramTm" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/01/08/smallProgramTm/">小程序模板引入方法</a>
+    </h1>
+  
+
+        
+        <a href="/2018/01/08/smallProgramTm/" class="archive-article-date">
+  	<time datetime="2018-01-08T08:14:14.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-08</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>在分享小程序模板的引入方法之前，先来聊一下，小程序的跳转问题；小程序的跳转是 navigator负责。注意这个组件跳转的路径是“非tabBar”页面，并且要注意要跳转的页面在app.js的“ “pages””配置上路径，另外，点击事件的路径跳转也是跳转的是“非tabBar”页面才会起作用。<br>url: 要跳转的路径，这里是可以传值的。参数与路径之间用？隔开，每个参数用&amp;隔开，可以在要跳转的页面下查看参数<br><img src="/2018/01/08/smallProgramTm/pic3.jpg" alt="logo"></p>
+<p>WXML提供模版(template),可以在模版中定义代码片段,然后在不同的地方调用.微信小程序的模版可以用name来命名它的名字,在使用的时候用is来声明使用的模版,然后将模版所需要的data传入即可,如下<br><img src="/2018/01/08/smallProgramTm/pic1.jpg" alt="logo"></p>
+<p>在 index.wxml 中引用了 text.wxml，就可以使用text模板：<br>引入方法如下<br><img src="/2018/01/08/smallProgramTm/pic2.jpg" alt="logo"><br>注意路径</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">小程序 template</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/01/08/smallProgramTm/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-react-router" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -885,81 +961,6 @@
 
 
   
-    <article id="post-QrCode" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/11/06/QrCode/">草料Chrome浏览器插件，让二维码更好用</a>
-    </h1>
-  
-
-        
-        <a href="/2017/11/06/QrCode/" class="archive-article-date">
-  	<time datetime="2017-11-06T09:54:04.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-06</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>草料chrome插件，是专为chrome核心的浏览器开发的一个二维码应用增强工具插件。可以自动将地址栏链接生成二维码，也可以解析网页上任意一个二维码图案的内容。</p>
-<p>传送门：<a href="https://cli.im/news/6527" target="_blank" rel="external">https://cli.im/news/6527</a></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">二维码</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/11/06/QrCode/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
   
     <nav id="page-nav">
       <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
@@ -974,7 +975,7 @@
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2017 僵小鱼
+    		&copy; 2018 僵小鱼
     	</div>
       	<div class="footer-right">
       		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
@@ -1061,15 +1062,11 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">github</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">移动适配</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">ps</a>
+                <a href="javascript:void(0)" class="js-tag color2">github</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1077,15 +1074,23 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">小程序 template</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">ps</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">工欲善其事，必先利其器</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">端口占用</a>
+                <a href="javascript:void(0)" class="js-tag color3">路由</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">路由</a>
+                <a href="javascript:void(0)" class="js-tag color5">端口占用</a>
               </li>
              
               <li class="article-tag-list-item">

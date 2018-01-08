@@ -6,24 +6,24 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://jiangxiaoyuboy.github.io">
-  <title>react的路由配置 | 僵小鱼的博客</title>
+  <title>小程序模板引入方法 | 僵小鱼的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="react的生态圈非常庞大，第三方的构建工具也有很多种，这节课介绍一个在业内比较流行的构建工具generator-react-webpack，它是需要yeoman的支持的。安装还是在命令行用npm进行安装，不过在全局安装generator-react-webpack之前，你可以先安装yeoman。命令如下：安装12npm install -g yonpm install -g generator-">
-<meta name="keywords" content="react路由">
+  <meta name="description" content="在分享小程序模板的引入方法之前，先来聊一下，小程序的跳转问题；小程序的跳转是 navigator负责。注意这个组件跳转的路径是“非tabBar”页面，并且要注意要跳转的页面在app.js的“ “pages””配置上路径，另外，点击事件的路径跳转也是跳转的是“非tabBar”页面才会起作用。url: 要跳转的路径，这里是可以传值的。参数与路径之间用？隔开，每个参数用&amp;amp;隔开，可以在要跳转的页面">
+<meta name="keywords" content="小程序 template">
 <meta property="og:type" content="article">
-<meta property="og:title" content="react的路由配置">
-<meta property="og:url" content="https://jiangxiaoyuboy.github.io/2017/12/28/react-router/index.html">
+<meta property="og:title" content="小程序模板引入方法">
+<meta property="og:url" content="https://jiangxiaoyuboy.github.io/2018/01/08/smallProgramTm/index.html">
 <meta property="og:site_name" content="僵小鱼的博客">
-<meta property="og:description" content="react的生态圈非常庞大，第三方的构建工具也有很多种，这节课介绍一个在业内比较流行的构建工具generator-react-webpack，它是需要yeoman的支持的。安装还是在命令行用npm进行安装，不过在全局安装generator-react-webpack之前，你可以先安装yeoman。命令如下：安装12npm install -g yonpm install -g generator-">
+<meta property="og:description" content="在分享小程序模板的引入方法之前，先来聊一下，小程序的跳转问题；小程序的跳转是 navigator负责。注意这个组件跳转的路径是“非tabBar”页面，并且要注意要跳转的页面在app.js的“ “pages””配置上路径，另外，点击事件的路径跳转也是跳转的是“非tabBar”页面才会起作用。url: 要跳转的路径，这里是可以传值的。参数与路径之间用？隔开，每个参数用&amp;amp;隔开，可以在要跳转的页面">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https://jiangxiaoyuboy.github.io/2017/12/28/react-router/pic1.png">
-<meta property="og:image" content="https://jiangxiaoyuboy.github.io/2017/12/28/react-router/pic2.png">
-<meta property="og:image" content="https://jiangxiaoyuboy.github.io/2017/12/28/react-router/pic3.png">
-<meta property="og:updated_time" content="2017-12-28T10:08:00.843Z">
+<meta property="og:image" content="https://jiangxiaoyuboy.github.io/2018/01/08/smallProgramTm/pic3.jpg">
+<meta property="og:image" content="https://jiangxiaoyuboy.github.io/2018/01/08/smallProgramTm/pic1.jpg">
+<meta property="og:image" content="https://jiangxiaoyuboy.github.io/2018/01/08/smallProgramTm/pic2.jpg">
+<meta property="og:updated_time" content="2018-01-08T10:04:19.943Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="react的路由配置">
-<meta name="twitter:description" content="react的生态圈非常庞大，第三方的构建工具也有很多种，这节课介绍一个在业内比较流行的构建工具generator-react-webpack，它是需要yeoman的支持的。安装还是在命令行用npm进行安装，不过在全局安装generator-react-webpack之前，你可以先安装yeoman。命令如下：安装12npm install -g yonpm install -g generator-">
-<meta name="twitter:image" content="https://jiangxiaoyuboy.github.io/2017/12/28/react-router/pic1.png">
+<meta name="twitter:title" content="小程序模板引入方法">
+<meta name="twitter:description" content="在分享小程序模板的引入方法之前，先来聊一下，小程序的跳转问题；小程序的跳转是 navigator负责。注意这个组件跳转的路径是“非tabBar”页面，并且要注意要跳转的页面在app.js的“ “pages””配置上路径，另外，点击事件的路径跳转也是跳转的是“非tabBar”页面才会起作用。url: 要跳转的路径，这里是可以传值的。参数与路径之间用？隔开，每个参数用&amp;amp;隔开，可以在要跳转的页面">
+<meta name="twitter:image" content="https://jiangxiaoyuboy.github.io/2018/01/08/smallProgramTm/pic3.jpg">
   
     <link rel="alternative" href="/atom.xml" title="僵小鱼的博客" type="application/atom+xml">
   
@@ -163,32 +163,29 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-react-router" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-smallProgramTm" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      react的路由配置
+      小程序模板引入方法
     </h1>
   
 
         
-        <a href="/2017/12/28/react-router/" class="archive-article-date">
-  	<time datetime="2017-12-28T09:46:02.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-28</time>
+        <a href="/2018/01/08/smallProgramTm/" class="archive-article-date">
+  	<time datetime="2018-01-08T08:14:14.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-08</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>react的生态圈非常庞大，第三方的构建工具也有很多种，这节课介绍一个在业内比较流行的构建工具generator-react-webpack，它是需要yeoman的支持的。<br>安装还是在命令行用npm进行安装，不过在全局安装generator-react-webpack之前，你可以先安装yeoman。命令如下：<br>安装<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">npm install -g yo</div><div class="line">npm install -g generator-react-webpack</div></pre></td></tr></table></figure></p>
-<p>创建目录<br>我们先用命令自行创建一个文件：new-react-demo<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">mkdir new-react-demo</div></pre></td></tr></table></figure></p>
-<p>进入这个文件夹<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">cd</span> new-react-demo</div></pre></td></tr></table></figure></p>
-<p>用生成器生成我们的项目目录<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">yo react-webpack</div></pre></td></tr></table></figure></p>
-<p>用npm start就可以查看效果了。<br>项目起来之后我们来配置路由<br>Router包安装:<br>安装包还是要打开命令行工具，使用npm来进行安装。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install --save react-router react-router-dom</div></pre></td></tr></table></figure></p>
-<p>react-router：是基本的router包，里边函的内容较多，但是在网页开发中有很多用不到，现在的市面上的课程讲的基本都是这个包的教程。<br>react-router-dom：随着react生态环境的壮大，后出现的包，这个包比react-router包轻巧了很多。<br>剩下的就是代码了，直接上图 index.js的内容<br><img src="/2017/12/28/react-router/pic1.png" alt="logo"><br>接下来是路由到两个页面的页面内容<br><img src="/2017/12/28/react-router/pic2.png" alt="logo"><br>注意的点是样式的写法，比如’引入方式’，’驼峰命名’,<br>当然样式的写法还有其他的写法，这里先不赘余。<br>效果<br><img src="/2017/12/28/react-router/pic3.png" alt="logo"></p>
+        <p>在分享小程序模板的引入方法之前，先来聊一下，小程序的跳转问题；小程序的跳转是 navigator负责。注意这个组件跳转的路径是“非tabBar”页面，并且要注意要跳转的页面在app.js的“ “pages””配置上路径，另外，点击事件的路径跳转也是跳转的是“非tabBar”页面才会起作用。<br>url: 要跳转的路径，这里是可以传值的。参数与路径之间用？隔开，每个参数用&amp;隔开，可以在要跳转的页面下查看参数<br><img src="/2018/01/08/smallProgramTm/pic3.jpg" alt="logo"></p>
+<p>WXML提供模版(template),可以在模版中定义代码片段,然后在不同的地方调用.微信小程序的模版可以用name来命名它的名字,在使用的时候用is来声明使用的模版,然后将模版所需要的data传入即可,如下<br><img src="/2018/01/08/smallProgramTm/pic1.jpg" alt="logo"></p>
+<p>在 index.wxml 中引用了 text.wxml，就可以使用text模板：<br>引入方法如下<br><img src="/2018/01/08/smallProgramTm/pic2.jpg" alt="logo"><br>注意路径</p>
 
       
 
@@ -223,7 +220,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">react路由</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">小程序 template</a>
         		</li>
       		
 		</ul>
@@ -279,7 +276,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=https://jiangxiaoyuboy.github.io/2017/12/28/react-router/" alt="微信分享二维码">
+      <img src="http://s.jiathis.com/qrcode.php?url=https://jiangxiaoyuboy.github.io/2018/01/08/smallProgramTm/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -293,18 +290,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2018/01/08/smallProgramTm/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          小程序模板引入方法
-        
-      </div>
-    </a>
   
-  
-    <a href="/2017/12/28/file-auth/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">如何删除需要管理员权限才能删除的文件夹</div>
+    <a href="/2017/12/28/react-router/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">react的路由配置</div>
       <i class="icon-circle-right"></i>
     </a>
   
