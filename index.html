@@ -159,6 +159,82 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-sProgramwxIf" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/01/16/sProgramwxIf/">小程序的wx:if判断</a>
+    </h1>
+  
+
+        
+        <a href="/2018/01/16/sProgramwxIf/" class="archive-article-date">
+  	<time datetime="2018-01-16T10:22:22.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-16</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>写这篇文章之前，在想要不要写，后来还是写吧，毕竟是遇到过的问题，经过一番周折才解决掉的，写来就作为提醒吧，<br>微信小程序判断多个条件可以用wx:if wx:elif wx:else的方法<br>具体用法上代码<br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">view</span> <span class="attr">class</span>=<span class="string">"small_num"</span>  <span class="attr">style</span>=<span class="string">"color:green"</span> <span class="attr">wx:if</span>=<span class="string">"&#123;&#123;dayLtePrateT=='下降'&#125;&#125;"</span>&gt;</span>&#123;&#123;dayLtePrateT&#125;&#125;&#123;&#123;dayLtePrate&#125;&#125;<span class="tag">&lt;/<span class="name">view</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">view</span> <span class="attr">class</span>=<span class="string">"small_num"</span>  <span class="attr">style</span>=<span class="string">"color:#999999;box-shadow:0 0 0 1px #d9d9d9 inset"</span> <span class="attr">wx:elif</span>=<span class="string">"&#123;&#123;dayLtePrateT=='持平'&#125;&#125;"</span>&gt;</span>&#123;&#123;dayLtePrateT&#125;&#125;&#123;&#123;dayLtePrate&#125;&#125;<span class="tag">&lt;/<span class="name">view</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">view</span> <span class="attr">class</span>=<span class="string">"small_num"</span>  <span class="attr">style</span>=<span class="string">"color:#f5222d"</span> <span class="attr">wx:else</span>&gt;</span>&#123;&#123;dayLtePrateT&#125;&#125;&#123;&#123;dayLtePrate&#125;&#125;<span class="tag">&lt;/<span class="name">view</span>&gt;</span></div></pre></td></tr></table></figure></p>
+<p>这就是在工作中遇到的问题，要根据返回的数据内容是”增加”,”下降”,”持平”的不同内容 来确定她们的不同样式，当然这也可通过直接操作数据的形式达到效果,或者通过在dom树上用“三目运算”的方式解决（判断三个条件，用三目运算符的方法好像不好处理）不过自己感觉这个方法简单一点。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">小程序滚动条</div></pre></td></tr></table></figure></p>
+<p>另外多说一句吧，有时候在页面的最外层加了“scroll-view”的标签，页面的底部还会有横向的滚动条,（“scroll-view”的作用是”可滚动视图区域”,包括许多属性，包括”scroll-x”和”scroll-y”）解决办法是把”scroll-view”标签，改成”scroll-y”标签，意思是不允许横向滚动，另外去掉纵向的默认的滚动条的方法是在最外层的标签加上样式<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">page::-webkit-scrollbar &#123;</div><div class="line">    display: none;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">wx:if 小程序滚动条</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/01/16/sProgramwxIf/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-react-antd" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -874,84 +950,6 @@
 
 
   
-    <article id="post-htmlps" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/11/18/htmlps/">前端切图-ps技能</a>
-    </h1>
-  
-
-        
-        <a href="/2017/11/18/htmlps/" class="archive-article-date">
-  	<time datetime="2017-11-18T03:38:15.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-18</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>1、打开ps软件，点击“编辑”-“首选项”-“单位与标尺”的单位与标尺改成“像素”<br><img src="/2017/11/18/htmlps/ps1.png" alt="logo"></p>
-<p>2、选择改成‘图层’，“自动选择”建议不选，在psd选择要切的图片时，点击左栏的拖动图标，选中图片，按住ctrl键，鼠标左击<br><img src="/2017/11/18/htmlps/ps2.png" alt="logo"></p>
-<p>3、把“视图”里面的“标尺”和“视图”-“显示”-“智能参考线”和“参考线”勾上<br>4、 在“窗口”这栏 勾上“图层”，“信息”，“历史记录”，“字符”，其他的可以勾掉<br>5、在右测“信息”，点击“面板选项”，做如下图修改<br><img src="/2017/11/18/htmlps/ps3.png" alt="logo"></p>
-<p>6、设置完成后，在“窗口”-“工作区”-“新建工作区”命名一个工作区，以便下次打开的时候使用<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">精准切图（有的版本不支持）</div></pre></td></tr></table></figure></p>
-<p>1、点击“文件”-“脚本”-“将图层导出到文件”，并做如下图修改<br><img src="/2017/11/18/htmlps/ps4.png" alt="logo"><br><img src="/2017/11/18/htmlps/ps5.png" alt="logo"></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">ps</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/11/18/htmlps/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
   
     <nav id="page-nav">
       <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
@@ -1057,11 +1055,23 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">移动适配</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">ps</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">antd</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">react路由</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">wx:if</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1077,19 +1087,11 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">ps</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">vue组件</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">路由</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">移动适配</a>
+                <a href="javascript:void(0)" class="js-tag color1">vue组件</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1098,6 +1100,10 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">webpack</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">wx:if 小程序滚动条</a>
               </li>
             
             <div class="clearfix"></div>
