@@ -6,23 +6,24 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://jiangxiaoyuboy.github.io">
-  <title>Windows下如何查看某个端口被谁占用 | 僵小鱼的博客</title>
+  <title>小程序的组件数据 | 僵小鱼的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="这里我们以4000端口为例1、按下win+R调出命令行窗口，输入netstat -aon|findstr “4000” ，找到指定的一列数字，这里是”9136”  2、输入tasklist|findstr “9136”，发现是3、再次输入taskkill /f /t /im node.exe结束该进程">
-<meta name="keywords" content="端口占用">
+  <meta name="description" content="1使用小程序组件的数据获取 使用小程序组件的时候，有时候需要获取组件中的数据，在获取数据的时候需要在template标签里面通过data来写入，如图所示 注意data这里等于的后面要加引号">
+<meta name="keywords" content="小程序 组件">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Windows下如何查看某个端口被谁占用">
-<meta property="og:url" content="https://jiangxiaoyuboy.github.io/2017/11/05/tool/index.html">
+<meta property="og:title" content="小程序的组件数据">
+<meta property="og:url" content="https://jiangxiaoyuboy.github.io/2018/02/07/wxprogramtemp/index.html">
 <meta property="og:site_name" content="僵小鱼的博客">
-<meta property="og:description" content="这里我们以4000端口为例1、按下win+R调出命令行窗口，输入netstat -aon|findstr “4000” ，找到指定的一列数字，这里是”9136”  2、输入tasklist|findstr “9136”，发现是3、再次输入taskkill /f /t /im node.exe结束该进程">
+<meta property="og:description" content="1使用小程序组件的数据获取 使用小程序组件的时候，有时候需要获取组件中的数据，在获取数据的时候需要在template标签里面通过data来写入，如图所示 注意data这里等于的后面要加引号">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https://jiangxiaoyuboy.github.io/2017/11/05/tool/port.png">
-<meta property="og:image" content="https://jiangxiaoyuboy.github.io/2017/11/05/tool/port1.png">
-<meta property="og:updated_time" content="2017-11-21T04:37:47.898Z">
+<meta property="og:image" content="https://jiangxiaoyuboy.github.io/2018/02/07/wxprogramtemp/pic1.jpg">
+<meta property="og:image" content="https://jiangxiaoyuboy.github.io/2018/02/07/wxprogramtemp/pic2.jpg">
+<meta property="og:image" content="https://jiangxiaoyuboy.github.io/2018/02/07/wxprogramtemp/pic3.jpg">
+<meta property="og:updated_time" content="2018-02-07T11:25:24.412Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Windows下如何查看某个端口被谁占用">
-<meta name="twitter:description" content="这里我们以4000端口为例1、按下win+R调出命令行窗口，输入netstat -aon|findstr “4000” ，找到指定的一列数字，这里是”9136”  2、输入tasklist|findstr “9136”，发现是3、再次输入taskkill /f /t /im node.exe结束该进程">
-<meta name="twitter:image" content="https://jiangxiaoyuboy.github.io/2017/11/05/tool/port.png">
+<meta name="twitter:title" content="小程序的组件数据">
+<meta name="twitter:description" content="1使用小程序组件的数据获取 使用小程序组件的时候，有时候需要获取组件中的数据，在获取数据的时候需要在template标签里面通过data来写入，如图所示 注意data这里等于的后面要加引号">
+<meta name="twitter:image" content="https://jiangxiaoyuboy.github.io/2018/02/07/wxprogramtemp/pic1.jpg">
   
     <link rel="alternative" href="/atom.xml" title="僵小鱼的博客" type="application/atom+xml">
   
@@ -162,29 +163,31 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-tool" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-wxprogramtemp" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      Windows下如何查看某个端口被谁占用
+      小程序的组件数据
     </h1>
   
 
         
-        <a href="/2017/11/05/tool/" class="archive-article-date">
-  	<time datetime="2017-11-05T13:10:57.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-05</time>
+        <a href="/2018/02/07/wxprogramtemp/" class="archive-article-date">
+  	<time datetime="2018-02-07T10:56:59.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-02-07</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>这里我们以4000端口为例<br>1、按下win+R调出命令行窗口，输入netstat -aon|findstr “4000” ，找到指定的一列数字，这里是”9136”</p>
-<p><img src="/2017/11/05/tool/port.png" alt="logo"></p>
-<p>2、输入tasklist|findstr “9136”，发现是<br><img src="/2017/11/05/tool/port1.png" alt="logo"><br>3、再次输入taskkill /f /t /im node.exe结束该进程</p>
+        <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">使用小程序组件的数据获取</div></pre></td></tr></table></figure>
+<p>使用小程序组件的时候，有时候需要获取组件中的数据，在获取数据的时候需要在template标签里面通过data来写入，如图所示</p>
+<p><img src="/2018/02/07/wxprogramtemp/pic1.jpg" alt="logo"><br>注意data这里等于的后面要加引号</p>
+<p><img src="/2018/02/07/wxprogramtemp/pic2.jpg" alt="logo"></p>
+<p><img src="/2018/02/07/wxprogramtemp/pic3.jpg" alt="logo"></p>
 
       
 
@@ -224,7 +227,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">端口占用</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">小程序 组件</a>
         		</li>
       		
 		</ul>
@@ -280,7 +283,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=https://jiangxiaoyuboy.github.io/2017/11/05/tool/" alt="微信分享二维码">
+      <img src="http://s.jiathis.com/qrcode.php?url=https://jiangxiaoyuboy.github.io/2018/02/07/wxprogramtemp/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -294,18 +297,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2017/11/06/QrCode/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          草料Chrome浏览器插件，让二维码更好用
-        
-      </div>
-    </a>
   
-  
-    <a href="/2017/10/28/hello-hello/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">移动端适配方案 flexible.js</div>
+    <a href="/2018/01/16/sProgramwxIf/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">小程序的wx:if判断</div>
       <i class="icon-circle-right"></i>
     </a>
   
