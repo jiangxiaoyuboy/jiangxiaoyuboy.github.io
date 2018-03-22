@@ -159,6 +159,81 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-eslint" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/03/22/eslint/">eslint的语法以及错误提示</a>
+    </h1>
+  
+
+        
+        <a href="/2018/03/22/eslint/" class="archive-article-date">
+  	<time datetime="2018-03-22T09:51:12.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-03-22</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>ESLint总是推荐用ES6的Template String来拼接字符串，而不能用+号，这个比较烦，毕竟残留代码比较多，所以，禁止掉！<br>eslint不能用+号做拼接符的报错内容为”Unexpected string concatenation”<br>禁止掉的方法为，在文件根目录下的eslintrc关掉他的规则<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">  <span class="string">'rules'</span>: &#123;</div><div class="line">    <span class="string">'prefer-template'</span>: <span class="string">'off'</span></div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>另外附上一份eslint的错误提示，传送门:<a href="http://www.cnblogs.com/lcddjm/p/6595007.html" target="_blank" rel="external">http://www.cnblogs.com/lcddjm/p/6595007.html</a><br>一份eslint的规则说明，传送门:<a href="http://blog.csdn.net/helpzp2008/article/details/51507428" target="_blank" rel="external">http://blog.csdn.net/helpzp2008/article/details/51507428</a><br>至于eslint的具体规则可以查询官网<a href="http://eslint.cn/" target="_blank" rel="external">http://eslint.cn/</a></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">eslint</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/03/22/eslint/">打赏 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-wxprogram" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -926,87 +1001,9 @@
 
 
   
-    <article id="post-githubProject" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/12/27/githubProject/">github上托管项目</a>
-    </h1>
-  
-
-        
-        <a href="/2017/12/27/githubProject/" class="archive-article-date">
-  	<time datetime="2017-12-27T08:27:58.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-27</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>#github的注册以及可以自行百度<br>使用以下命令生成SSH Key</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ ssh-keygen -t rsa -C &quot;youremail@example.com&quot;</div></pre></td></tr></table></figure>
-<p>创建新项目的步骤如下</p>
-<p><img src="/2017/12/27/githubProject/pic1.jpg" alt="logo"><br>然后输入相关内容就可以了 如下图（test4）<br><img src="/2017/12/27/githubProject/pic2.jpg" alt="logo"><br>然后创建一个文件test4,通过git工具 git bash进入这个文件执行如下图的命令即可（github上有提示）</p>
-<p><img src="/2017/12/27/githubProject/pic3.png" alt="logo"><br>至此，可以把要托管的项目放到test4文件夹下，然后进入文件路径下执行一系列git命令(git add –all/git commit -m “解释”/ git push -u origin master)</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">github</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/12/27/githubProject/">打赏 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
   
     <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
+      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
     </nav>
   
 
@@ -1113,6 +1110,10 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">eslint</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">移动适配</a>
               </li>
              
@@ -1153,6 +1154,10 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">vue-router</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">webpack</a>
               </li>
              
@@ -1161,15 +1166,11 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">vue-router</a>
+                <a href="javascript:void(0)" class="js-tag color2">小程序 组件</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">小程序 下拉刷新 上拉加载</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">小程序 组件</a>
               </li>
             
             <div class="clearfix"></div>
