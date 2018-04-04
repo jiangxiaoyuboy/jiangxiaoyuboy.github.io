@@ -183,11 +183,11 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>react的生态圈非常庞大，第三方的构建工具也有很多种，这节课介绍一个在业内比较流行的构建工具generator-react-webpack，它是需要yeoman的支持的。<br>安装还是在命令行用npm进行安装，不过在全局安装generator-react-webpack之前，你可以先安装yeoman。命令如下：<br>安装<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">npm install -g yo</div><div class="line">npm install -g generator-react-webpack</div></pre></td></tr></table></figure></p>
-<p>创建目录<br>我们先用命令自行创建一个文件：new-react-demo<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">mkdir new-react-demo</div></pre></td></tr></table></figure></p>
-<p>进入这个文件夹<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">cd</span> new-react-demo</div></pre></td></tr></table></figure></p>
-<p>用生成器生成我们的项目目录<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">yo react-webpack</div></pre></td></tr></table></figure></p>
-<p>用npm start就可以查看效果了。<br>项目起来之后我们来配置路由<br>Router包安装:<br>安装包还是要打开命令行工具，使用npm来进行安装。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install --save react-router react-router-dom</div></pre></td></tr></table></figure></p>
+        <p>react的生态圈非常庞大，第三方的构建工具也有很多种，这节课介绍一个在业内比较流行的构建工具generator-react-webpack，它是需要yeoman的支持的。<br>安装还是在命令行用npm进行安装，不过在全局安装generator-react-webpack之前，你可以先安装yeoman。命令如下：<br>安装<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm install -g yo</span><br><span class="line">npm install -g generator-react-webpack</span><br></pre></td></tr></table></figure></p>
+<p>创建目录<br>我们先用命令自行创建一个文件：new-react-demo<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mkdir new-react-demo</span><br></pre></td></tr></table></figure></p>
+<p>进入这个文件夹<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> new-react-demo</span><br></pre></td></tr></table></figure></p>
+<p>用生成器生成我们的项目目录<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yo react-webpack</span><br></pre></td></tr></table></figure></p>
+<p>用npm start就可以查看效果了。<br>项目起来之后我们来配置路由<br>Router包安装:<br>安装包还是要打开命令行工具，使用npm来进行安装。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install --save react-router react-router-dom</span><br></pre></td></tr></table></figure></p>
 <p>react-router：是基本的router包，里边函的内容较多，但是在网页开发中有很多用不到，现在的市面上的课程讲的基本都是这个包的教程。<br>react-router-dom：随着react生态环境的壮大，后出现的包，这个包比react-router包轻巧了很多。<br>剩下的就是代码了，直接上图 index.js的内容<br><img src="/2017/12/28/react-router/pic1.png" alt="logo"><br>接下来是路由到两个页面的页面内容<br><img src="/2017/12/28/react-router/pic2.png" alt="logo"><br>注意的点是样式的写法，比如’引入方式’，’驼峰命名’,<br>当然样式的写法还有其他的写法，这里先不赘余。<br>效果<br><img src="/2017/12/28/react-router/pic3.png" alt="logo"></p>
 
       
@@ -371,8 +371,13 @@
       		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
       	</div>
     </div>
+    <p class="copyright">
+       本站总访问量 <span id="busuanzi_value_site_pv"></span> 次, 访客数 <span id="busuanzi_value_site_uv"></span> 人次, 本文总阅读量 <span id="busuanzi_value_page_pv"></span> 次
+    </p>
   </div>
 </footer>
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
     </div>
     <script>
 	var yiliaConfig = {
@@ -452,14 +457,6 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">git</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">github</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">eslint</a>
               </li>
              
@@ -472,15 +469,23 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">github</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">git</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">antd</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">react路由</a>
+                <a href="javascript:void(0)" class="js-tag color3">wx:if 小程序滚动条</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">wx:if 小程序滚动条</a>
+                <a href="javascript:void(0)" class="js-tag color3">react路由</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -508,19 +513,19 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">webpack</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">win7</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">小程序 组件</a>
+                <a href="javascript:void(0)" class="js-tag color3">webpack</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">小程序 下拉刷新 上拉加载</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">小程序 组件</a>
               </li>
             
             <div class="clearfix"></div>

@@ -179,15 +179,15 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>学无止境，精益求精<br>十年河东，十年河西，莫欺少年穷<br>学历代表你的过去，能力代表你的现在，学习代表你的将来<br>传送门：<a href="https://www.cnblogs.com/chenwolong/p/GIT.html" target="_blank" rel="external">https://www.cnblogs.com/chenwolong/p/GIT.html</a><br>git的几个专用名词(另外注意.gitignore的用法)<br>Workspace:   工作区<br>Index/stage: 暂存区<br>Repository:  仓库区<br>Remote:      远程仓库<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">新建代码库</div></pre></td></tr></table></figure></p>
+        <p>学无止境，精益求精<br>十年河东，十年河西，莫欺少年穷<br>学历代表你的过去，能力代表你的现在，学习代表你的将来<br>传送门：<a href="https://www.cnblogs.com/chenwolong/p/GIT.html" target="_blank" rel="noopener">https://www.cnblogs.com/chenwolong/p/GIT.html</a><br>git的几个专用名词(另外注意.gitignore的用法)<br>Workspace:   工作区<br>Index/stage: 暂存区<br>Repository:  仓库区<br>Remote:      远程仓库<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">新建代码库</span><br></pre></td></tr></table></figure></p>
 <p>#在当前新建一个git代码库<br>$ git init</p>
 <p>#新建一个目录，将其初始化为git代码库<br>$ git init [project-name]</p>
-<p>#下载一个项目和他的整个代码历史<br>$ git clone [url]<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">配置</div></pre></td></tr></table></figure></p>
+<p>#下载一个项目和他的整个代码历史<br>$ git clone [url]<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">配置</span><br></pre></td></tr></table></figure></p>
 <p>Git的设置文件为.gitconfig，它可以在用户主目录下（全局配置），也可以在项目目录下（项目配置）。</p>
 <p>#显示当前的Git配置<br>$ git config –list</p>
 <p>#编辑Git配置文件<br>$ git config -e [–global]</p>
 <p>#设置提交代码时的用户信息<br>$ git config [–global] user.name “[name]”<br>$ git config [–global] user.email “[email address]”</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">增加/删除文件</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">增加/删除文件</span><br></pre></td></tr></table></figure>
 <p>#添加指定文件到暂存区<br>$ git add [file1] [file2] …</p>
 <p>#添加指定目录到暂存区，包括子目录<br>$ git add [dir]</p>
 <p>#添加当前目录的所有文件到暂存区<br>$ git add .</p>
@@ -195,14 +195,14 @@
 <p>#对于同一个文件的多处变化，可以实现分次提交<br>$ git add -p</p>
 <p>#删除工作区文件，并且将这次删除放入暂存区<br>$ git rm [file1] [file2] …</p>
 <p>#停止追踪指定文件，但该文件会保留在工作区<br>$ git rm –cached [file]</p>
-<p>#改名文件，并且将这个改名放入暂存区<br>$ git mv [file-original] [file-renamed]<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">代码提交</div></pre></td></tr></table></figure></p>
+<p>#改名文件，并且将这个改名放入暂存区<br>$ git mv [file-original] [file-renamed]<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">代码提交</span><br></pre></td></tr></table></figure></p>
 <p>#提交暂存区到仓库区<br>$ git commit -m [message]</p>
 <p>#提交暂存区的指定文件到仓库区<br>$ git commit [file1] [file2] … -m [message]</p>
 <p>#提交工作区自上次commit之后的变化，直接到仓库区<br>$ git commit -a</p>
 <p>#提交时显示所有diff信息<br>$ git commit -v</p>
 <p>#使用一次新的commit，替代上一次提交</p>
 <p>#如果代码没有任何新变化，则用来改写上一次commit的提交信息<br>$ git commit –amend -m [message]</p>
-<p>#重做上一次commit，并包括指定文件的新变化<br>$ git commit –amend [file1] [file2] …<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">分支</div></pre></td></tr></table></figure></p>
+<p>#重做上一次commit，并包括指定文件的新变化<br>$ git commit –amend [file1] [file2] …<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">分支</span><br></pre></td></tr></table></figure></p>
 <p>#列出所有本地分支<br>$ git branch</p>
 <p>#列出所有远程分支<br>$ git branch -r</p>
 <p>#列出所有本地分支和远程分支<br>$ git branch -a</p>
@@ -216,7 +216,7 @@
 <p>#合并指定分支到当前分支<br>$ git merge [branch]</p>
 <p>#选择一个commit，合并进当前分支<br>$ git cherry-pick [commit]</p>
 <p>#删除分支<br>$ git branch -d [branch-name]</p>
-<p>#删除远程分支<br>$ git push origin –delete [branch-name]<br>$ git branch -dr [remote/branch]<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">标签</div></pre></td></tr></table></figure></p>
+<p>#删除远程分支<br>$ git push origin –delete [branch-name]<br>$ git branch -dr [remote/branch]<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">标签</span><br></pre></td></tr></table></figure></p>
 <p>#列出所有tag<br>$ git tag</p>
 <p>#新建一个tag在当前commit<br>$ git tag [tag]</p>
 <p>#新建一个tag在指定commit<br>$ git tag [tag] [commit]</p>
@@ -225,7 +225,7 @@
 <p>#查看tag信息<br>$ git show [tag]</p>
 <p>#提交指定tag<br>$ git push [remote] [tag]</p>
 <p>#提交所有tag<br>$ git push [remote] –tags</p>
-<p>#新建一个分支，指向某个tag<br>$ git checkout -b [branch] [tag]<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">查看信息</div></pre></td></tr></table></figure></p>
+<p>#新建一个分支，指向某个tag<br>$ git checkout -b [branch] [tag]<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">查看信息</span><br></pre></td></tr></table></figure></p>
 <p>#显示有变更的文件<br>$ git status</p>
 <p>#显示当前分支的版本历史<br>$ git log</p>
 <p>#显示commit历史，以及每次commit发生变更的文件<br>$ git log –stat</p>
@@ -246,7 +246,7 @@
 <p>#显示某次提交发生变化的文件<br>$ git show –name-only [commit]</p>
 <p>#显示某次提交时，某个文件的内容<br>$ git show [commit]:[filename]</p>
 <p>#显示当前分支的最近几次提交<br>$ git reflog</p>
-<p>#从本地master拉取代码更新当前分支：branch 一般为master<br>$ git rebase [branch]<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">远程同步</div></pre></td></tr></table></figure></p>
+<p>#从本地master拉取代码更新当前分支：branch 一般为master<br>$ git rebase [branch]<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">远程同步</span><br></pre></td></tr></table></figure></p>
 <p>#下载远程仓库的所有变动<br>$ git fetch [remote]</p>
 <p>#显示所有远程仓库<br>$ git remote -v</p>
 <p>#显示某个远程仓库的信息<br>$ git remote show [remote]</p>
@@ -254,7 +254,7 @@
 <p>#取回远程仓库的变化，并与本地分支合并<br>$ git pull [remote] [branch]</p>
 <p>#上传本地指定分支到远程仓库<br>$ git push [remote] [branch]</p>
 <p>#强行推送当前分支到远程仓库，即使有冲突<br>$ git push [remote] –force</p>
-<p>#推送所有分支到远程仓库<br>$ git push [remote] –all<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">撤销</div></pre></td></tr></table></figure></p>
+<p>#推送所有分支到远程仓库<br>$ git push [remote] –all<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">撤销</span><br></pre></td></tr></table></figure></p>
 <p>#恢复暂存区的指定文件到工作区<br>$ git checkout [file]</p>
 <p>#恢复某个commit的指定文件到暂存区和工作区<br>$ git checkout [commit] [file]</p>
 <p>#恢复暂存区的所有文件到工作区<br>$ git checkout .</p>
@@ -265,7 +265,7 @@
 <p>#重置当前HEAD为指定commit，但保持暂存区和工作区不变<br>$ git reset –keep [commit]</p>
 <p>#新建一个commit，用来撤销指定commit</p>
 <p>#后者的所有变化都将被前者抵消，并且应用到当前分支<br>$ git revert [commit]</p>
-<p>#暂时将未提交的变化移除，稍后再移入<br>$ git stash<br>$ git stash pop<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">其他</div></pre></td></tr></table></figure></p>
+<p>#暂时将未提交的变化移除，稍后再移入<br>$ git stash<br>$ git stash pop<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">其他</span><br></pre></td></tr></table></figure></p>
 <p>#生成一个可供发布的压缩包<br>$ git archive</p>
 
       
@@ -449,8 +449,13 @@
       		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
       	</div>
     </div>
+    <p class="copyright">
+       本站总访问量 <span id="busuanzi_value_site_pv"></span> 次, 访客数 <span id="busuanzi_value_site_uv"></span> 人次, 本文总阅读量 <span id="busuanzi_value_page_pv"></span> 次
+    </p>
   </div>
 </footer>
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
     </div>
     <script>
 	var yiliaConfig = {
@@ -530,14 +535,6 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">git</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">github</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">eslint</a>
               </li>
              
@@ -550,15 +547,23 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">github</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">git</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">antd</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">react路由</a>
+                <a href="javascript:void(0)" class="js-tag color3">wx:if 小程序滚动条</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">wx:if 小程序滚动条</a>
+                <a href="javascript:void(0)" class="js-tag color3">react路由</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -586,19 +591,19 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">webpack</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">win7</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">小程序 组件</a>
+                <a href="javascript:void(0)" class="js-tag color3">webpack</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">小程序 下拉刷新 上拉加载</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">小程序 组件</a>
               </li>
             
             <div class="clearfix"></div>

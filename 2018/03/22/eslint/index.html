@@ -179,8 +179,8 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>ESLint总是推荐用ES6的Template String来拼接字符串，而不能用+号，这个比较烦，毕竟残留代码比较多，所以，禁止掉！<br>eslint不能用+号做拼接符的报错内容为”Unexpected string concatenation”<br>禁止掉的方法为，在文件根目录下的eslintrc关掉他的规则<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">  <span class="string">'rules'</span>: &#123;</div><div class="line">    <span class="string">'prefer-template'</span>: <span class="string">'off'</span></div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-<p>另外附上一份eslint的错误提示，传送门:<a href="http://www.cnblogs.com/lcddjm/p/6595007.html" target="_blank" rel="external">http://www.cnblogs.com/lcddjm/p/6595007.html</a><br>一份eslint的规则说明，传送门:<a href="http://blog.csdn.net/helpzp2008/article/details/51507428" target="_blank" rel="external">http://blog.csdn.net/helpzp2008/article/details/51507428</a><br>至于eslint的具体规则可以查询官网<a href="http://eslint.cn/" target="_blank" rel="external">http://eslint.cn/</a></p>
+        <p>ESLint总是推荐用ES6的Template String来拼接字符串，而不能用+号，这个比较烦，毕竟残留代码比较多，所以，禁止掉！<br>eslint不能用+号做拼接符的报错内容为”Unexpected string concatenation”<br>禁止掉的方法为，在文件根目录下的eslintrc关掉他的规则<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="string">'rules'</span>: &#123;</span><br><span class="line">    <span class="string">'prefer-template'</span>: <span class="string">'off'</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>另外附上一份eslint的错误提示，传送门:<a href="http://www.cnblogs.com/lcddjm/p/6595007.html" target="_blank" rel="noopener">http://www.cnblogs.com/lcddjm/p/6595007.html</a><br>一份eslint的规则说明，传送门:<a href="http://blog.csdn.net/helpzp2008/article/details/51507428" target="_blank" rel="noopener">http://blog.csdn.net/helpzp2008/article/details/51507428</a><br>至于eslint的具体规则可以查询官网<a href="http://eslint.cn/" target="_blank" rel="noopener">http://eslint.cn/</a></p>
 
       
 
@@ -290,6 +290,15 @@
   
 <nav id="article-nav">
   
+    <a href="/2018/04/03/hello-world/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          Hello World
+        
+      </div>
+    </a>
+  
   
     <a href="/2018/03/02/wxprogram/" id="article-nav-older" class="article-nav-link-wrap">
       <div class="article-nav-title">小程序下拉刷新上拉加载</div>
@@ -354,8 +363,13 @@
       		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
       	</div>
     </div>
+    <p class="copyright">
+       本站总访问量 <span id="busuanzi_value_site_pv"></span> 次, 访客数 <span id="busuanzi_value_site_uv"></span> 人次, 本文总阅读量 <span id="busuanzi_value_page_pv"></span> 次
+    </p>
   </div>
 </footer>
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
     </div>
     <script>
 	var yiliaConfig = {
@@ -435,14 +449,6 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">git</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">github</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">eslint</a>
               </li>
              
@@ -455,15 +461,23 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">github</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">git</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">antd</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">react路由</a>
+                <a href="javascript:void(0)" class="js-tag color3">wx:if 小程序滚动条</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">wx:if 小程序滚动条</a>
+                <a href="javascript:void(0)" class="js-tag color3">react路由</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -491,19 +505,19 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">webpack</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">win7</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">小程序 组件</a>
+                <a href="javascript:void(0)" class="js-tag color3">webpack</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">小程序 下拉刷新 上拉加载</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">小程序 组件</a>
               </li>
             
             <div class="clearfix"></div>
