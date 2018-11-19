@@ -159,6 +159,107 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-position" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/11/19/position/">css中position的用法</a>
+    </h1>
+  
+
+        
+        <a href="/2018/11/19/position/" class="archive-article-date">
+  	<time datetime="2018-11-19T13:25:42.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-11-19</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="position的用法"><a href="#position的用法" class="headerlink" title="position的用法"></a>position的用法</h2><p>提起css中的position的值，想必应该都知道，如absolute,relative,fixed,static,</p>
+<table>
+<thead>
+<tr>
+<th>值</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>absolute</td>
+<td>生成绝对定位，相对于static定位以外的第一个父元素进行定位。</td>
+</tr>
+<tr>
+<td>relative</td>
+<td>生成相对定位，相对于正常位值进行定位。</td>
+</tr>
+<tr>
+<td>fixed</td>
+<td>生成固定定位，相对于浏览器窗口进行定位。</td>
+</tr>
+<tr>
+<td>static</td>
+<td>默认值。没有定位，元素出现在正常的流中。</td>
+</tr>
+</tbody>
+</table>
+<p>不过现在要说的不是要说这些，因为之前切页面的时候遇到过关于position的文档流的问题，所以现在梳理一下，做下记录。<br>其中 <strong><em>absolute</em></strong> 和 <strong><em>fixed</em></strong> 是<strong>脱离文档流</strong>的，另absolute和float虽然都脱离了文档流，在float脱离文档流的时候虽然其他盒子无视他，但是盒子中的文本围绕他，而absolute脱离文档流会造成其他盒子和盒子的文本无视他。</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">css position</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/11/19/position/">打赏 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-gitit-back" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -923,82 +1024,6 @@
 
 
   
-    <article id="post-smallProgramTm" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/01/08/smallProgramTm/">小程序模板引入方法</a>
-    </h1>
-  
-
-        
-        <a href="/2018/01/08/smallProgramTm/" class="archive-article-date">
-  	<time datetime="2018-01-08T08:14:14.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-08</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>在分享小程序模板的引入方法之前，先来聊一下，小程序的跳转问题；小程序的跳转是 navigator负责。注意这个组件跳转的路径是“非tabBar”页面，并且要注意要跳转的页面在app.js的“ “pages””配置上路径，另外，点击事件的路径跳转也是跳转的是“非tabBar”页面才会起作用。<br>url: 要跳转的路径，这里是可以传值的。参数与路径之间用？隔开，每个参数用&amp;隔开，可以在要跳转的页面下查看参数<br><img src="/2018/01/08/smallProgramTm/pic3.jpg" alt="logo"></p>
-<p>WXML提供模版(template),可以在模版中定义代码片段,然后在不同的地方调用.微信小程序的模版可以用name来命名它的名字,在使用的时候用is来声明使用的模版,然后将模版所需要的data传入即可,如下<br><img src="/2018/01/08/smallProgramTm/pic1.jpg" alt="logo"></p>
-<p>在 index.wxml 中引用了 text.wxml，就可以使用text模板：<br>引入方法如下<br><img src="/2018/01/08/smallProgramTm/pic2.jpg" alt="logo"></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">小程序 template</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/01/08/smallProgramTm/">打赏 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
   
     <nav id="page-nav">
       <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
@@ -1101,11 +1126,11 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">eslint</a>
+                <a href="javascript:void(0)" class="js-tag color4">二维码</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">二维码</a>
+                <a href="javascript:void(0)" class="js-tag color2">eslint</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1114,6 +1139,10 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">github</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">git闪退</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1129,7 +1158,7 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">git闪退</a>
+                <a href="javascript:void(0)" class="js-tag color3">css position</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1149,11 +1178,11 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">路由</a>
+                <a href="javascript:void(0)" class="js-tag color5">端口占用</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">端口占用</a>
+                <a href="javascript:void(0)" class="js-tag color3">路由</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1161,11 +1190,11 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">webpack</a>
+                <a href="javascript:void(0)" class="js-tag color1">vue-router</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">vue-router</a>
+                <a href="javascript:void(0)" class="js-tag color3">webpack</a>
               </li>
              
               <li class="article-tag-list-item">
