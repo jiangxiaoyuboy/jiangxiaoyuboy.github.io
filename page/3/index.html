@@ -159,6 +159,94 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-sublimetools" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/11/17/sublimetools/">sublime的安装与使用</a>
+    </h1>
+  
+
+        
+        <a href="/2017/11/17/sublimetools/" class="archive-article-date">
+  	<time datetime="2017-11-17T11:33:55.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-17</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Sublime的安装可以去官网按照提示安装<br>Sublime Text3虽然功能强大，但是还是需要一些插件的辅助，下面我就给大家分享下如何在Sublime Text3下安装插件。<br>Package Control组件在线安装<br>1、按Ctrl+`调出console（注：避免热键冲突）<br>2、粘贴以下代码到命令行并回车：<br>import urllib.request,os; pf = ‘Package Control.sublime-package’; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), ‘wb’).write(urllib.request.urlopen( ‘<a href="http://sublime.wbond.net/" target="_blank" rel="noopener">http://sublime.wbond.net/</a>‘ + pf.replace(‘ ‘,’%20’)).read())<br>3、重启Sublime Text 3。<br>4、如果在Perferences-&gt;package settings中看到package control这一项，则安装成功。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sublimeText3汉化教程-自带插件汉化</span><br></pre></td></tr></table></figure></p>
+<p>1、首先打开sublime，找到preference 下的package control<br><img src="/2017/11/17/sublimetools/pht1.png" alt="logo"></p>
+<p>2、点击package control ，弹出如下框搜索install，找到install package点击进入</p>
+<p><img src="/2017/11/17/sublimetools/pht2.png" alt="logo"></p>
+<p>3、点击进入之后搜索localiza,找到如下选项，点击安装<br><img src="/2017/11/17/sublimetools/pht3.png" alt="logo"></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Emmet（原名 Zen Coding）</span><br></pre></td></tr></table></figure>
+<p>一种快速编写html/css的方法<br>安装方法同汉化插件，在最后一步输入“Emmet”点击进入</p>
+<p>输入快捷键 按Tab<br><img src="/2017/11/17/sublimetools/pht4.png" alt="logo"></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">HTML-CSS-JS Prettify</span><br></pre></td></tr></table></figure>
+<p>安装方法同上<br>使用说明：快速格式化html css js<br>快捷键：ctrl+shift+h<br>注意：node.exe的路径以及版本</p>
+<p><img src="/2017/11/17/sublimetools/pht5.png" alt="logo"></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">代码校验工具 SublimeLinter 的安装与使用</span><br></pre></td></tr></table></figure>
+<p>传送门：<a href="https://www.cnblogs.com/zhrn/p/5066309.html" target="_blank" rel="noopener">https://www.cnblogs.com/zhrn/p/5066309.html</a></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Sublime Text 3 快捷键总结（拿走）</span><br></pre></td></tr></table></figure>
+<p>传送门：<a href="https://www.douban.com/note/362268947/" target="_blank" rel="noopener">https://www.douban.com/note/362268947/</a></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">工欲善其事，必先利其器</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/11/17/sublimetools/">打赏 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-QrCode" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -403,7 +491,7 @@
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2018 僵小鱼
+    		&copy; 2019 僵小鱼
     	</div>
       	<div class="footer-right">
       		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
@@ -495,6 +583,14 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">git闪退</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">github</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">eslint</a>
               </li>
              
@@ -503,19 +599,7 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">github</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">git闪退</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">移动适配</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">ps</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -523,11 +607,11 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">css position</a>
+                <a href="javascript:void(0)" class="js-tag color3">ps</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">react路由</a>
+                <a href="javascript:void(0)" class="js-tag color3">css position</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -535,7 +619,7 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">工欲善其事，必先利其器</a>
+                <a href="javascript:void(0)" class="js-tag color3">react路由</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -547,19 +631,7 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">路由</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">vue组件</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">vue-router</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">webpack</a>
+                <a href="javascript:void(0)" class="js-tag color2">工欲善其事，必先利其器</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -567,11 +639,31 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">路由</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">vue-router</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">小程序 下拉刷新 上拉加载</a>
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">webpack</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">小程序 组件</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">vue组件</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">样式 兼容</a>
               </li>
             
             <div class="clearfix"></div>

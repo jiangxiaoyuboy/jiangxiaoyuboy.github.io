@@ -6,18 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://jiangxiaoyuboy.github.io">
-  <title>Archives: 2017 | 僵小鱼的博客</title>
+  <title>工作杂结 | 僵小鱼的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="记录">
-<meta property="og:type" content="website">
-<meta property="og:title" content="僵小鱼的博客">
-<meta property="og:url" content="https://jiangxiaoyuboy.github.io/archives/2017/index.html">
+  <meta name="description" content="这里是工作中遇到的一些问题，记录下来，以便用时参考pc端input标签的type为number时候去掉右侧加减按钮的方法1234567891011/*谷歌*/input::-webket-outer-spin-button,input::-webket-inner-spin-button &amp;#123;    -webket-appearance: none;    appearance:none;">
+<meta name="keywords" content="样式 兼容">
+<meta property="og:type" content="article">
+<meta property="og:title" content="工作杂结">
+<meta property="og:url" content="https://jiangxiaoyuboy.github.io/2019/03/31/record/index.html">
 <meta property="og:site_name" content="僵小鱼的博客">
-<meta property="og:description" content="记录">
+<meta property="og:description" content="这里是工作中遇到的一些问题，记录下来，以便用时参考pc端input标签的type为number时候去掉右侧加减按钮的方法1234567891011/*谷歌*/input::-webket-outer-spin-button,input::-webket-inner-spin-button &amp;#123;    -webket-appearance: none;    appearance:none;">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-03-31T12:37:09.753Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="僵小鱼的博客">
-<meta name="twitter:description" content="记录">
+<meta name="twitter:title" content="工作杂结">
+<meta name="twitter:description" content="这里是工作中遇到的一些问题，记录下来，以便用时参考pc端input标签的type为number时候去掉右侧加减按钮的方法1234567891011/*谷歌*/input::-webket-outer-spin-button,input::-webket-inner-spin-button &amp;#123;    -webket-appearance: none;    appearance:none;">
   
     <link rel="alternative" href="/atom.xml" title="僵小鱼的博客" type="application/atom+xml">
   
@@ -157,394 +159,187 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-record" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      工作杂结
+    </h1>
+  
+
+        
+        <a href="/2019/03/31/record/" class="archive-article-date">
+  	<time datetime="2019-03-31T11:18:26.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-03-31</time>
+</a>
+        
+      </header>
     
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="这里是工作中遇到的一些问题，记录下来，以便用时参考"><a href="#这里是工作中遇到的一些问题，记录下来，以便用时参考" class="headerlink" title="这里是工作中遇到的一些问题，记录下来，以便用时参考"></a>这里是工作中遇到的一些问题，记录下来，以便用时参考</h4><h5 id="pc端input标签的type为number时候去掉右侧加减按钮的方法"><a href="#pc端input标签的type为number时候去掉右侧加减按钮的方法" class="headerlink" title="pc端input标签的type为number时候去掉右侧加减按钮的方法"></a>pc端input标签的type为number时候去掉右侧加减按钮的方法</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">/*谷歌*/</span><br><span class="line">input::-webket-outer-spin-button,</span><br><span class="line">input::-webket-inner-spin-button &#123;</span><br><span class="line">    -webket-appearance: none;</span><br><span class="line">    appearance:none;</span><br><span class="line">    margin:0;</span><br><span class="line">&#125;</span><br><span class="line">/*火狐*/</span><br><span class="line">input &#123;</span><br><span class="line">    -moz-appearance:textfield;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h5 id="手机端页面点击按钮时去掉其黑边阴影的方法"><a href="#手机端页面点击按钮时去掉其黑边阴影的方法" class="headerlink" title="手机端页面点击按钮时去掉其黑边阴影的方法"></a>手机端页面点击按钮时去掉其黑边阴影的方法</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">标签添加样式</span><br><span class="line">&#123;-webkit-tap-highlight-color: transparent;&#125;</span><br><span class="line">//去掉button默认的样式</span><br><span class="line">button &#123;botder:0;background-color:transparent&#125;</span><br><span class="line">//去掉input的默认样式</span><br><span class="line">input&#123;background:none;-webkit-appearance:none&#125;;</span><br></pre></td></tr></table></figure>
+<h5 id="改变input挂光标的颜色"><a href="#改变input挂光标的颜色" class="headerlink" title="改变input挂光标的颜色"></a>改变input挂光标的颜色</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">改变input的鼠标的光标颜色input&#123;caret-color:&apos;颜色值&apos;&#125;</span><br></pre></td></tr></table></figure>
+<h5 id="移动端去掉alert弹框头部的默认网址"><a href="#移动端去掉alert弹框头部的默认网址" class="headerlink" title="移动端去掉alert弹框头部的默认网址"></a>移动端去掉alert弹框头部的默认网址</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">//js里面添加代码</span><br><span class="line">window.alert = function(name)&#123;</span><br><span class="line">	var iframe = document.createElement(&quot;IFRAME&quot;);</span><br><span class="line">	iframe.style.display=&quot;none&quot;;</span><br><span class="line">	iframe.setAttribute(&quot;src&quot;, &apos;data:text/plain,&apos;);</span><br><span class="line">	document.documentElement.appendChild(iframe);</span><br><span class="line">	window.frames[0].window.alert(name);</span><br><span class="line">	iframe.parentNode.removeChild(iframe);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h5 id="css3的transform不兼容ie9，解决办法是在其前面加前缀-ms"><a href="#css3的transform不兼容ie9，解决办法是在其前面加前缀-ms" class="headerlink" title="css3的transform不兼容ie9，解决办法是在其前面加前缀 -ms-"></a>css3的transform不兼容ie9，解决办法是在其前面加前缀 -ms-</h5><h5 id="ie9下渐变色不兼容，解决办法是见传送门：https-www-jb51-net-css-173486-html"><a href="#ie9下渐变色不兼容，解决办法是见传送门：https-www-jb51-net-css-173486-html" class="headerlink" title="ie9下渐变色不兼容，解决办法是见传送门：https://www.jb51.net/css/173486.html"></a>ie9下渐变色不兼容，解决办法是见传送门：<a href="https://www.jb51.net/css/173486.html" target="_blank" rel="noopener">https://www.jb51.net/css/173486.html</a></h5><h5 id="小程序tabbar中间图标突出的实现方式见传送门：-https-www-jianshu-com-p-ce1c3c25527c"><a href="#小程序tabbar中间图标突出的实现方式见传送门：-https-www-jianshu-com-p-ce1c3c25527c" class="headerlink" title="小程序tabbar中间图标突出的实现方式见传送门： https://www.jianshu.com/p/ce1c3c25527c"></a>小程序tabbar中间图标突出的实现方式见传送门： <a href="https://www.jianshu.com/p/ce1c3c25527c" target="_blank" rel="noopener">https://www.jianshu.com/p/ce1c3c25527c</a></h5><h5 id="小程序获取城市地理位置的传送门：-https-blog-csdn-net-weixin-42262436-article-details-80458430"><a href="#小程序获取城市地理位置的传送门：-https-blog-csdn-net-weixin-42262436-article-details-80458430" class="headerlink" title="小程序获取城市地理位置的传送门： https://blog.csdn.net/weixin_42262436/article/details/80458430"></a>小程序获取城市地理位置的传送门： <a href="https://blog.csdn.net/weixin_42262436/article/details/80458430" target="_blank" rel="noopener">https://blog.csdn.net/weixin_42262436/article/details/80458430</a></h5><h5 id="setInterval和setTimeout的区别"><a href="#setInterval和setTimeout的区别" class="headerlink" title="setInterval和setTimeout的区别"></a>setInterval和setTimeout的区别</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">setInterval（定时器）：规定多长时间执行一次，可执行多次；</span><br><span class="line">setTimeout（延时调用）: 再过多久执行一次，且只执行一次；</span><br></pre></td></tr></table></figure>
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/img/weixinpay1.png">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
       
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/12/28/react-router/" class="archive-article-date">
-  	<time datetime="2017-12-28T09:46:02.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-28</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/12/28/react-router/">react的路由配置</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">react路由</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">样式 兼容</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=https://jiangxiaoyuboy.github.io/2019/03/31/record/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/12/28/file-auth/" class="archive-article-date">
-  	<time datetime="2017-12-28T03:22:39.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-28</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2018/11/19/position/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">css中position的用法</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/12/28/file-auth/">如何删除需要管理员权限才能删除的文件夹</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#这里是工作中遇到的一些问题，记录下来，以便用时参考"><span class="toc-number">1.</span> <span class="toc-text">这里是工作中遇到的一些问题，记录下来，以便用时参考</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#pc端input标签的type为number时候去掉右侧加减按钮的方法"><span class="toc-number">1.1.</span> <span class="toc-text">pc端input标签的type为number时候去掉右侧加减按钮的方法</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#手机端页面点击按钮时去掉其黑边阴影的方法"><span class="toc-number">1.2.</span> <span class="toc-text">手机端页面点击按钮时去掉其黑边阴影的方法</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#改变input挂光标的颜色"><span class="toc-number">1.3.</span> <span class="toc-text">改变input挂光标的颜色</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#移动端去掉alert弹框头部的默认网址"><span class="toc-number">1.4.</span> <span class="toc-text">移动端去掉alert弹框头部的默认网址</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#css3的transform不兼容ie9，解决办法是在其前面加前缀-ms"><span class="toc-number">1.5.</span> <span class="toc-text">css3的transform不兼容ie9，解决办法是在其前面加前缀 -ms-</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#ie9下渐变色不兼容，解决办法是见传送门：https-www-jb51-net-css-173486-html"><span class="toc-number">1.6.</span> <span class="toc-text">ie9下渐变色不兼容，解决办法是见传送门：https://www.jb51.net/css/173486.html</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#小程序tabbar中间图标突出的实现方式见传送门：-https-www-jianshu-com-p-ce1c3c25527c"><span class="toc-number">1.7.</span> <span class="toc-text">小程序tabbar中间图标突出的实现方式见传送门： https://www.jianshu.com/p/ce1c3c25527c</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#小程序获取城市地理位置的传送门：-https-blog-csdn-net-weixin-42262436-article-details-80458430"><span class="toc-number">1.8.</span> <span class="toc-text">小程序获取城市地理位置的传送门： https://blog.csdn.net/weixin_42262436/article/details/80458430</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#setInterval和setTimeout的区别"><span class="toc-number">1.9.</span> <span class="toc-text">setInterval和setTimeout的区别</span></a></li></ol></li></ol>
+                    </div>
+                </span>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+        
+    </div>
+</aside>
+
+
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/12/27/githubProject/" class="archive-article-date">
-  	<time datetime="2017-12-27T08:27:58.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-27</time>
-</a>
-        </div>
-    	 
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/12/27/githubProject/">github上托管项目</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">github</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/12/22/webpackDom/" class="archive-article-date">
-  	<time datetime="2017-12-22T12:31:03.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-22</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/12/22/webpackDom/">webpack搭建环境配置</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">webpack</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/11/21/vueComponents/" class="archive-article-date">
-  	<time datetime="2017-11-21T07:59:17.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-21</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/11/21/vueComponents/">vue的组件使用</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">vue组件</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/11/20/vueRtName/" class="archive-article-date">
-  	<time datetime="2017-11-20T14:31:22.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-20</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/11/20/vueRtName/">路由的命名和参数传递</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">vue-router</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/11/19/vue-router/" class="archive-article-date">
-  	<time datetime="2017-11-19T04:40:23.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-19</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/11/19/vue-router/">vue2.0路由的用法</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">路由</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/11/18/htmlps/" class="archive-article-date">
-  	<time datetime="2017-11-18T03:38:15.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-18</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/11/18/htmlps/">前端切图-ps技能</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">ps</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/11/17/sublimetools/" class="archive-article-date">
-  	<time datetime="2017-11-17T11:33:55.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-17</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/11/17/sublimetools/">sublime的安装与使用</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">工欲善其事，必先利其器</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/11/06/QrCode/" class="archive-article-date">
-  	<time datetime="2017-11-06T09:54:04.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-06</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/11/06/QrCode/">草料Chrome浏览器插件，让二维码更好用</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">二维码</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
-    <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/archives/2017/page/2/">2</a><a class="extend next" rel="next" href="/archives/2017/page/2/">Next &raquo;</a>
-    </nav>
   
 
 
@@ -573,8 +368,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
